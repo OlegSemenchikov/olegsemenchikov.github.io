@@ -1,0 +1,78 @@
+@import "variables";
+
+//Styles for footer
+.footer{
+  &-wrapper{
+    background: $header_color-white;
+    height: 92px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 133px;
+
+  }
+  &__title{
+    font-family: sans-serif;
+    color: $footer_color-text;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &__subtitle{
+    font-family: sans-serif;
+    color: $footer_color-text;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 65px;
+
+  }
+  &__text {
+    font-family: sans-serif;
+    font-size: 12px;
+    display: block;
+    color: $footer_color-text;
+  }
+  &__facebook{
+    text-decoration: none;
+    margin-left: 70px;
+    &:before {
+      content: "\f230";
+      font-family: FontAwesome;
+      font-size: 17px;
+      color: $footer_color-facebook;
+    }
+  }
+  &__twitter{
+    text-decoration: none;
+    margin-left: 38px;
+    &:before {
+      content: "\f099";
+      font-family: FontAwesome;
+      font-size: 17px;
+      color: $footer_color-twitter;
+    }
+  }
+  &__instagram{
+    text-decoration: none;
+    margin-left: 38px;
+    &:before {
+      content: "\f16d";
+      font-family: FontAwesome;
+      font-size: 17px;
+      color: $footer_color-instagram;
+    }
+  }
+  &__vimeo{
+    text-decoration: none;
+    margin-left: 38px;
+    &:before {
+      content: "\f194";
+      font-family: FontAwesome;
+      font-size: 17px;
+      color: $footer_color-vimeo;
+    }
+  }
+}

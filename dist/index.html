@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WebsiteForYou</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body body_background">
+    <header class="flex-center-center">
+        <div class="box-general header-wrapper flex-between-center">
+            <div id="burger-icon" class="burger-icon" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+            <div id="burger-menu" class="burger-menu">
+                <ul>
+                    <li id="burger-menu__item" class="burger-menu__item"  data-close_menu>
+                        <a class="burger-menu__text" href="#">geomap</a>
+                    </li>
+                    <li class="burger-menu__item" data-close_menu>
+                        <a class="burger-menu__text" href="#">home</a>
+                    </li>
+                    <li class="burger-menu__item" data-close_menu>
+                        <a class="burger-menu__text" href="#">about</a>
+                    </li>
+                    <li class="burger-menu__item" data-close_menu>
+                        <a class="burger-menu__text" href="#">features</a>
+                    </li>
+                    <li class="burger-menu__item" data-close_menu>
+                        <a class="burger-menu__text" href="#">prising</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-around-center">
+                <div>
+                    <a class="logo__circle flex-center-center" href="#"></a>
+                </div>
+                <div >
+                    <a class="logo__title" href="#">geotrack</a>
+                    <span class="logo__text">ver 1.0</span>
+                </div>
+            </div>
+            <div class="menu">
+                <nav >
+                    <ul class="flex-around-center">
+                        <li class="menu__item">
+                            <a class="menu__text menu__text_active" href="#">geomap</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__text" href="#">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__text" href="#">about</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__text" href="#">features</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__text" href="#">prising</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <form action="" method="get" class="form-wrapper">
+                <button type="submit" class="form__button"></button>
+                <input name="s" placeholder="Search geotrack" type="search" class="form__input">
+            </form>
+            <div class="icon-person">
+                <a href="#">
+                    <img src="img/icon_person.png">
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <section class="flex-center-center">
+        <div  class="section-wrapper box-general flex-center-start">
+            <div class="info-wrapper">
+                <div class="info__container">
+                    <div class="flex-start-center">
+                        <a href="#" class="info__icon-arms">
+                            <img src="img/icon_arms.png">
+                        </a>
+                        <img src="img/qr_code.png" class="info__icon-qr-code">
+                        <a href="#" class="info__icon-arrow"></a>
+                    </div>
+                    <div id="contCopy">
+                        <p class="info__title">California University</p>
+                        <p class="info__id">ID: 1238923748903478914751089</p>
+                    </div>
+                    <button id="userButton" class="info__button-copy">
+                        Copy in buffer
+                    </button>
+                </div>
+                <div class="info__container-text" >
+                    <p class="info__subtitle-wrapper">
+                        <span class="info__subtitle">Geo Type:</span>
+                        <span class="info__text">Covernment</span>
+                    </p>
+                    <p class="info__subtitle-wrapper">
+                        <span class="info__subtitle">Short Geo:</span>
+                        <span class="info__text">CA_University</span>
+                    </p>
+                    <p class="info__subtitle-wrapper flex-center-start">
+                        <span class="info__subtitle">Adress:</span>
+                        <span class="info__text">United States, California LA, Sarigza Avenue 234, 44A</span>
+                    </p>
+                    <p class="info__subtitle-wrapper">
+                        <span class="info__subtitle">Email:</span>
+                        <span class="info__text info__text-email">ca@enivesity@gmail.com</span>
+                    </p>
+                    <p class="info__subtitle-wrapper">
+                        <span class="info__subtitle">Expiere:</span>
+                        <span class="info__text">31 Oct 2016</span>
+                    </p>
+                    <p class="info__subtitle-wrapper">
+                        <span class="info__subtitle">Privacy:</span>
+                        <span class="info__text">Enable</span>
+                    </p>
+                </div>
+                <div class="flex-center-center">
+                    <button class="info__button-edit">
+                        Edit Profile
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="message-wrapper flex-between-start">
+                    <div>
+                        <span class="message__circle flex-center-center"></span>
+                    </div>
+                    <div>
+                        <p class="message__text message__text-title">Geo Message</p>
+                        <p class="message__text">The results of yesterday's election came as a surprise to most of us,
+                            regardless of our political views. It will take time for us to process and understand
+                            the meaning of the vote.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <iframe class="map-wrapper" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae50baaaa1b6794cc65520f4296cfc84cbe3a2b11ce046c283e5e23b38fd2f7c1&amp;source=constructor"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="flex-center-center">
+        <div  class="footer-wrapper box-general flex-between-center">
+            <div>
+                <a class="footer__title" href="#">geotrack</a>
+                <span class="footer__text">© Geotrack Inc. All rigth reserved 2016</span>
+            </div>
+            <div class="flex-between-center">
+                <a class="footer__subtitle" href="#">app api</a>
+                <a class="footer__subtitle" href="#">support</a>
+                <a class="footer__facebook" href="https://www.facebook.com/" target="_blank"></a>
+                <a class="footer__twitter" href="https://twitter.com/" target="_blank"></a>
+                <a class="footer__instagram" href="https://www.instagram.com/" target="_blank"></a>
+                <a class="footer__vimeo" href="https://vimeo.com/" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>

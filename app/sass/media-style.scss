@@ -1,0 +1,499 @@
+@import "variables";
+
+//Styles for devices with a resolution of less than 1300 рх
+@media screen and (max-width: 1300px) {
+
+  //Central container for all elements
+  .box-general{
+    width: 96%;
+    padding: 0 30px;
+  }
+
+  //Styles for header
+  .header{
+    &-wrapper{
+      height: 80px;
+      margin-top: 100px;
+    }
+  }
+
+  //Styles for logotype
+  .logo {
+    &__title{
+      margin-right: 30px;
+    }
+  }
+
+
+  //Styles for menu
+  .menu {
+    &__item {
+      height: 80px;
+      margin-right: 5%;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+
+
+  //Styles for form
+  .form {
+    &-wrapper{
+      width: 350px;
+      margin-right: 0;
+    }
+    &__input {
+      width: 300px;
+      height: 35px;
+      margin-left: 35px;
+      font-size: 13px;
+    }
+    &__button {
+      height: 35px;
+      width: 35px;
+      &:after {
+        font-size: 13px;
+      }
+    }
+  }
+
+  //Styles for section
+  .section{
+    &-wrapper{
+      height:auto;
+    }
+  }
+  .info{
+    &-wrapper{
+      width: auto;
+      height: 100%;
+    }
+    //Styles for icon-arms
+    &__icon-arrow{
+      margin-left: 40%;
+    }
+    &__text{
+      display: inline;
+    }
+    &__button{
+      &-edit{
+        width: 80%;
+        margin: 5% 0;
+      }
+    }
+  }
+
+  .message{
+    &-wrapper{
+      width: auto;
+      height:auto;
+      padding: 5%;
+      position: relative;
+    }
+    &__circle{
+      margin-left: 20px;
+    }
+  }
+
+  .map{
+    &-wrapper{
+      width: 100%;
+      height: 385px;
+    }
+  }
+}
+
+//Styles for devices with a resolution of less than 1000 рх
+@media screen and (max-width: 1000px) {
+
+  //Central container for all elements
+  .box-general{
+
+    padding: 0 3%;
+    box-sizing: border-box;
+  }
+
+  //Styles for header
+  .header{
+    &-wrapper{
+      height: 50px;
+      margin-top: 50px;
+    }
+  }
+
+
+  //Styles for logotype
+  .logo {
+    &__title{
+      //font-size: 12px;
+      margin-right: 20px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+    &__circle{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      &:before {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+  //Styles for menu
+  .menu {
+    &__item {
+      height: 50px;
+      margin-right: 5%;
+    }
+    &__text {
+      font-size: 10px;
+    }
+  }
+
+
+
+  //Styles for form
+  .form {
+    &-wrapper{
+      width: 250px;
+      margin-right: 0;
+    }
+    &__input {
+      width: 210px;
+      height: 30px;
+      margin-left: 30px;
+      font-size: 12px;
+    }
+    &__button {
+      height: 30px;
+      width: 30px;
+      &:after {
+        font-size: 12px;
+      }
+    }
+  }
+  //Styles for icon-person
+  .icon-person{
+   display: none;
+  }
+
+  //Styles for section
+  .section{
+    &-wrapper{
+      height:auto;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .info{
+    &-wrapper{
+      width: 95%;
+      height: 680px;
+      margin: 35px 0;
+    }
+    &__icon-arrow{
+      margin-left: 70%;
+    }
+    &__subtitle{
+      width: auto;
+      margin-bottom: 13px;
+      &-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+
+  .message{
+    &-wrapper{
+      width: 95%;
+      height:auto;
+      padding: 5%;
+      margin: auto;
+      position: relative;
+    }
+    &__circle{
+      margin-left: 20px;
+    }
+  }
+
+  .map{
+    &-wrapper{
+      width: 95%;
+      height: 400px;
+      margin: 35px 19px;
+    }
+  }
+
+  //Styles for footer
+  .footer{
+    &-wrapper{
+      height: 50px;
+      margin-bottom: 50px;
+
+    }
+    &__title{
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    &__subtitle{
+      font-size: 12px;
+
+    }
+    &__text {
+      font-size: 10px;
+    }
+    &__facebook{
+      margin-left: 40px;
+      &:before {
+      }
+    }
+    &__twitter{
+      margin-left: 20px;
+      &:before {
+      }
+    }
+    &__instagram{
+      margin-left: 20px;
+      &:before {
+      }
+    }
+    &__vimeo{
+      margin-left: 20px;
+      &:before {
+      }
+    }
+  }
+}
+
+
+//Styles for devices with a resolution of less than 768 рх
+@media screen and (max-width: 768px) {
+
+  //Styles for burger-menu
+  .burger {
+    &-icon {
+      display: initial;
+    }
+    &-menu{
+      &_visible {
+        display: initial;
+      }
+      &-drop__text_visible{
+        display: inline-block;
+      }
+    }
+  }
+
+  //Styles for logotype
+  .logo {
+    &__title {
+      font-size: 16px;
+    }
+    &__text {
+      display: none;
+    }
+    &__circle {
+      display: none;
+    }
+  }
+
+  //Styles for menu
+  .menu {
+    display: none;
+  }
+
+
+  //Styles for form
+  .form {
+    &-wrapper{
+      width: 150px;
+      margin-right: 0;
+    }
+    &__input {
+      width: 110px;
+      height: 30px;
+      margin-left: 30px;
+      font-size: 12px;
+    }
+    &__button {
+      height: 30px;
+      width: 30px;
+      &:after {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .info{
+    &-wrapper{
+      margin: 35px 0;
+    }
+    //Styles for icon-person
+    &__icon-arms{
+      border-radius: 50%;
+    }
+    &__icon-qr-code{
+    }
+    &__icon-arrow{
+      margin-left: 40%;
+      display: none;
+    }
+    &__title{
+      font-size: 14px;
+    }
+    &__subtitle{
+      font-size: 12px;
+      //width: 140px;
+      line-height: 20px;
+      &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &__text{
+      font-size: 12px;
+      position: relative;
+      right: 0;
+    }
+    &__id{
+      font-size: 12px;
+    }
+  }
+
+  .message{
+    &-wrapper{
+      width: 95%;
+      height:auto;
+      padding: 5%;
+      margin: auto;
+      position: relative;
+    }
+    &__circle{
+      margin-left: 10px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 16px;
+      &-title{
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  .map{
+    &-wrapper{
+      height: 400px;
+      margin: 35px 10px;
+    }
+  }
+
+  //Styles for footer
+  .footer{
+    &__title{
+      font-size: 10px;
+      margin-bottom: 3px;
+    }
+    &__subtitle{
+      display: none;
+    }
+    &__text {
+      font-size: 8px;
+    }
+    &__facebook{
+      margin-left: 40px;
+    }
+    &__twitter{
+      margin-left: 20px;
+    }
+    &__instagram{
+      margin-left: 20px;
+    }
+    &__vimeo{
+      margin-left: 20px;
+    }
+  }
+}
+
+//Styles for devices with a resolution of less than 360 рх
+@media screen and (max-width: 360px) {
+  .box-general{
+    width: 360px;
+    padding: 0;
+  }
+
+
+  .section{
+    &-wrapper{
+      width: 360px;
+    }
+  }
+
+  //Styles for form
+  .form {
+    &-wrapper{
+      display: none;
+    }
+  }
+
+  //Central container for all elements
+  .box-general{
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .info{
+    &-wrapper{
+      width: 280px;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    &__button{
+      &-edit{
+        width: 60%;
+        height: 40px;
+        margin: 5% 0;
+      }
+    }
+  }
+
+  .message{
+    &-wrapper{
+      width: 280px;
+      height:auto;
+      margin: auto;
+      position: relative;
+    }
+  }
+  .map{
+    &-wrapper{
+      width: 280px;
+      height: 280px;
+      margin: 10px 0;
+    }
+  }
+
+  //Styles for footer
+  .footer{
+    &__facebook{
+      margin-left: 20px;
+    }
+    &__twitter{
+      margin-left: 10px;
+    }
+    &__instagram{
+      margin-left: 10px;
+    }
+    &__vimeo{
+      margin-left: 10px;
+    }
+  }
+}
