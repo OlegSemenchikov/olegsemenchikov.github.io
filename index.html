@@ -1,87 +1,360 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marsrover</title>
-    <link href="css/styles.min.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Finished site</title>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
-<body class="body body_background flex-center-center">
-    <div class="box-general flex-center-around">
-        <div class="flex-between-center">
-            <div class="meters-wrapper flex-center-around">
-                <p class="flex-between-center">
-                    <span class="meters__text">текущая позиции марсохода:</span>
-                    <span id="position" class="meters__text meters__text-number">0</span>
-                </p>
-                <p class="flex-between-center">
-                    <span class="meters__text">текущая скорость марсохода:</span>
-                    <span id="speed" class="meters__text meters__text-number">1</span>
-                </p>
+<body class="body-wrapper">
+    <header class="header-background">
+        <div class="display-flex">
+            <nav class="header__nav menu-flex">
+                <a class="header__item" href="#about-me">about me</a>
+                <a class="header__item" href="#portfolio">portfolio</a>
+                <a href="index.html"><img class="header__item-img" src="img/logo.png"></a>
+                <a class="header__item" href="#my-blog">my blog</a>
+                <a class="header__item" href="#contact-me">contact me</a>
+            </nav>
+            <div id="burger-icon" class="burger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
             </div>
-            <div class="console-wrapper flex-center-between">
-                <p class="console__text">пульт управления марсоходом:</p>
-                <div class="flex-center-center">
-                    <button id="btnAcceleration" class="console__button console__button-acceleration">A</button>
-                    <button id="btnReverse" class="console__button console__button-reverse">R</button>
+            <div class=" menu__nav">
+                <a class="menu__item" href="#about-me">about me</a>
+                <a class="menu__item" href="#portfolio">portfolio</a>
+                <a class="menu__item" href="#my-blog">my blog</a>
+                <a class="menu__item" href="#contact-me">contact me</a>
+            </div>
+
+        </div>
+        <div class="section__border-top"></div>
+        <div>
+            <div class="section__border-bottom box-shadow"></div>
+            <div class="display-flex"><img src="img/banner-retro.png" class="header__banner"></div>
+            <div class="display-flex">
+                <div class="display-flex header__label-wrapper">
+                    <span class="header__point header__point-left"></span>
+                    <span class="header__point header__point-left"></span>
+                    <span class="header__point header__point-left"></span>
+                    <span class="header__point header__point-left"></span>
+                    <div class="display-flex">
+                        <div class="header__label-left"></div>
+                        <div class="header__label-front">
+                            <div class="header__border-bottom"></div>
+                            <h3 class="header__label">old style portfolio</h3>
+                            <div class="header__border-top"></div>
+                        </div>
+                        <div class="header__label-right"></div>
+                    </div>
+                    <span class="header__point header__point-right"></span>
+                    <span class="header__point header__point-right"></span>
+                    <span class="header__point header__point-right"></span>
+                    <span class="header__point header__point-right"></span>
+                </div>
+            </div>
+            <div class="display-flex">
+                <div class="header__carousel">
+                    <div id="carouselExampleControls" class="carousel fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <figure class="carousel-item active">
+                                <img class="d-block header__carousel-item" src="img/slider-1.jpg" alt="First slide">
+                                <figcaption class="header__text"><h5>kodak camera</h5></figcaption>
+                            </figure>
+                            <figure class="carousel-item">
+                                <img class="d-block header__carousel-item" src="img/slider-2.jpg" alt="Second slide">
+                                <figcaption class="header__text"><h5>the long and winding road</h5></figcaption>
+                            </figure>
+                            <figure class="carousel-item">
+                                <img class="d-block header__carousel-item" src="img/slider-3.jpg" alt="Third slide">
+                                <figcaption class="header__text"><h5>happy keys</h5></figcaption>
+                            </figure>
+                            <figure class="carousel-item">
+                                <img class="d-block header__carousel-item" src="img/slider-4.jpg" alt="Fourth slide">
+                                <figcaption class="header__text"><h5>a nice friend</h5></figcaption>
+                            </figure>
+                        </div>
+                        <div class="header__circle header__circle-left"></div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <div class="header__circle header__circle-right"></div>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="header__text-block header__text header__text-color">
+                    <h3>"hello, I am john doe.</h3>
+                    <h4>welcome to retro, my wonderful theme!"</h4>
+                </div>
+                <div class="section__border-top"></div>
+        </div>
+    </header>
+    <section class="section-flex section--about-me-background" id="about-me">
+        <div class="section__border-bottom"></div>
+        <div class="section__title section__title-dark">about me</div>
+        <div class="display-flex">
+            <span class="section__separator-dark">xxx</span>
+        </div>
+        <div class="section__subtitle section__subtitle-dark">I am a graphic designer from baltimore</div>
+        <div class="section__columns">
+            <div class="section-flex section__column">
+               <div class="display-flex section__circle">
+                   <span class="column__sprite column__sprite-tv"></span>
+               </div>
+               <h4 class="column__title">movies</h4>
+               <div class="column__subtitle">what I watch</div>
+               <div class="column__separator"></div>
+               <div class="column__comment">
+                   Clutter is honest! I do believe that has to the users selfexpression. Care.
+                   Things which is a projector operating system such formats are deep and profound and meaningful.
+                   It's the traditions of data. Good design should be different levels.
+                   There's no rational alternative. That's come to complexity.
+               </div>
+            </div>
+            <div class="section-flex section__column">
+                <div class="display-flex section__circle">
+                    <span class="column__sprite column__sprite-vinyl"></span>
+                </div>
+                <h4 class="column__title">music</h4>
+                <div class="column__subtitle">what I listen</div>
+                <div class="column__separator"></div>
+                <div class="column__comment">
+                    Good design. The content, you'll love powerpoint should be different.
+                    It's about design is that part? Good design is making something looks. And aesthetic.
+                    And colour defines your interface. That cannot be overtly different.
+                    That has to chance. And restrained, low resolution, but you get rid of materials.
+                </div>
+            </div>
+            <div class="section-flex section__column">
+                <div class="display-flex section__circle">
+                    <span class="column__sprite column__sprite-shirt"></span>
+                </div>
+                <h4 class="column__title">clothes</h4>
+                <div class="column__subtitle">what I wear</div>
+                <div class="column__separator"></div>
+                <div class="column__comment">
+                    Very honest approach and product. The other product that changes function
+                    like the absence of function. And frustrating that products that it's the functional imperative,
+                    we kept going and frustrating that we are about bringing order to be better and less complicated to understand.
+                </div>
+            </div>
+            <div class="section-flex section__column">
+                <div class="display-flex section__circle">
+                    <span class="column__sprite column__sprite-food"></span>
+                </div>
+                <h4 class="column__title">food</h4>
+                <div class="column__subtitle">what  I eat</div>
+                <div class="column__separator"></div>
+                <div class="column__comment">
+                    Simplicity. Its context. From so many different levels. There's real simplicity is.
+                    Designing and place of the objects we're surrounded by seem trivial. There's no rational alternative.
+                    I think that's a very complicated problems without letting people have a very easy to mean so much that acknowledges.
                 </div>
             </div>
         </div>
-        <div class="flex-center-center surface-wrapper">
-            <div >
-                <ul class="flex-center-center">
-                    <li class="surface__item">
-                        <spun class="surface__text">-7</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-6</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-5</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-4</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-3</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-2</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">-1</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">0</spun>
-                        <img id="marsRover" src="img/marsrover.png" class="marsrover-wrapper marsrover_transition">
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">1</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">2</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">3</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">4</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">5</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">6</spun>
-                    </li>
-                    <li class="surface__item">
-                        <spun class="surface__text">7</spun>
-                    </li>
+        <div class="section__border-top"></div>
+    </section>
+    <section class="section-flex section--portfolio-background" id="portfolio">
+        <div class="section__border-bottom"></div>
+        <div class="section__title section__title-dark">portfolio</div>
+        <div class="display-flex">
+            <span class="section__separator-dark">xxx</span>
+        </div>
+        <div class="section__subtitle section__subtitle-dark">simplicity is the ultimate sophistication</div>
+        <div class="portfolio-wrapper">
+            <div class="portfolio__filter">
+                <div class="portfolio__filter-label">Filter by</div>
+                <ul>
+                    <li class="portfolio__filter-item portfolio__filter-active" data-slug="design">design</li>
+                    <li class="portfolio__filter-item" data-slug="logo">logo</li>
+                    <li class="portfolio__filter-item" data-slug="photography">photography</li>
+                    <li class="portfolio__filter-item" data-slug="poster">poster</li>
+                    <li class="portfolio__filter-item" data-slug="resources">resources</li>
+                    <li class="portfolio__filter-item" data-slug="retro">retro</li>
+                    <li class="portfolio__filter-item" data-slug="t-shirts">t-shirts</li>
+                    <li class="portfolio__filter-item" data-slug="videos">videos</li>
                 </ul>
             </div>
+            <div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-1.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-photo"></span>
+                    </div>
+                    <div class="portfolio__img-comment">image galleries are funny</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-2.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-tv"></span>
+                    </div>
+                    <div class="portfolio__img-comment">a vimeo reel</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-3.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-sound"></span>
+                    </div>
+                    <div class="portfolio__img-comment">love for old cameras</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-4.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-note"></span>
+                    </div>
+                    <div class="portfolio__img-comment">detailed project page</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-5.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-tv"></span>
+                    </div>
+                    <div class="portfolio__img-comment">youtube video</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-6.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-clip"></span>
+                    </div>
+                    <div class="portfolio__img-comment">another external link</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-7.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-photo"></span>
+                    </div>
+                    <div class="portfolio__img-comment">a lightbox image</div>
+                </div>
+                <div class="portfolio__img-wrapper">
+                    <img class="portfolio__img" src="img/portfolio-8.jpg">
+                    <div class="portfolio__sprite display-flex">
+                        <span class="portfolio__sprite-sound"></span>
+                    </div>
+                    <div class="portfolio__img-comment">the dark tempest</div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="section-flex">
+            <span class="portfolio__separator"></span>
+            <h3 class="section__end">browse all</h3>
+        </div>
+        <div class="section__border-top"></div>
+    </section>
+    <section class="section-flex section--my-blog-background" id="my-blog">
+        <div class="section__border-bottom"></div>
+        <div class="section__title section__title-dark">my blog</div>
+        <div class="display-flex">
+            <span class="section__separator-dark">xxx</span>
+        </div>
+        <div class="section__subtitle section__subtitle-dark">news from my house</div>
+        <div class="blog-wrapper">
+            <div class="blog__item">
+                <div class="blog__img-wrapper display-flex">
+                    <img class="blog__img" src="img/blog-1.jpg">
+                </div>
+                <div>
+                    <h3 class="blog__title">The Magic Wheel</h3>
+                    <span class="blog__subtitle"><time datetime="2014-07-28T12:48:23+00:00">july 28, 2014</time>
+                        // admin // fun, travel, trends</span>
+                    <span class="blog__postsubtitle">1 response</span>
+                </div>
+                <div class="blog__separator"></div>
+                <div class="blog__comment">It's not it to understand them in the objects we're playing.
+                    Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime
+                    point of analysis. People have enormous serial correlation. Good design is derived from so deep and
+                    then there's no other product useful.</div>
+            </div>
+            <div class="blog__item">
+                <div class="blog__img-wrapper display-flex">
+                    <img class="blog__img" src="img/blog-2.jpg">
+                </div>
+                <div>
+                    <h3 class="blog__title">The lonely road</h3>
+                    <span class="blog__subtitle"><time datetime="2014-07-28T12:48:23+00:00">july 28, 2014</time>
+                        // admin // fun, travel, trends, web design</span>
+                    <span class="blog__postsubtitle">3 responses</span>
+                </div>
+                <div class="blog__separator"></div>
+                <div class="blog__comment">If you've studied design at all, you've probably encountered Lorem Ipsum
+                    placeholder text at some point. Anywhere there is text, but the meaning of that text is't particularly
+                    important, you might see Lorem Ipsum.</div>
+            </div>
+            <div class="blog__item">
+                <div class="blog__img-wrapper display-flex">
+                    <img class="blog__img" src="img/blog-3.jpg">
+                </div>
+                <div>
+                    <h3 class="blog__title">I love gasoline smell</h3>
+                    <span class="blog__subtitle"><time datetime="2014-07-28T12:48:23+00:00">july 28, 2014</time>
+                        // admin // fun, trends, web design</span>
+                    <span class="blog__postsubtitle">no response</span>
+                </div>
+                <div class="blog__separator"></div>
+                <div class="blog__comment">Many of the content, and often about their precious turfpossessed selves and
+                    principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your
+                    interface. I think that are deep and profound indeed, these tasks and showing. </div>
+            </div>
+        </div>
+        <div class="section-flex">
+            <span class="portfolio__separator"></span>
+            <h3 class="section__end">show all posts</h3>
+        </div>
+
+        <div class="section__border-top"></div>
+    </section>
+    <section class="section-flex section--contact-me-background" id="contact-me">
+        <div class="section__border-bottom"></div>
+        <div class="section__title section__title-light">contact me</div>
+        <div class="display-flex">
+            <span class="section__separator-light">xxx</span>
+        </div>
+        <div class="section__subtitle section__subtitle-light">I'll be glad to answer your questions!</div>
+
+        <div class="section-flex contact-wrapper">
+            <form   action="#" id="retro-mail-form">
+                <fieldset class="section-flex">
+                    <input class="contact__item" type="text" name="name" id="name" placeholder="Name">
+                    <input class="contact__item" type="email" name="email" id="email" placeholder="Email address">
+                    <input class="contact__item" type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea class="contact__item contact__item-message" name="message" id="message" cols="60" rows="7" placeholder="Your message"></textarea>
+                    <input class="contact__button" id="send" type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </div>
+        <div class="section-flex">
+            <h3 class="social__title">I am social</h3>
+            <span class="social__separator"></span>
+        </div>
+        <div class="display-flex social-wrapper">
+            <div class="display-flex social__circle">
+                <a class="social__sprite social__sprite-twitter" href="https://twitter.com" target="_blank"></a>
+            </div>
+            <div class="display-flex social__circle">
+                <a class="social__sprite social__sprite-fb" href="https://www.facebook.com" target="_blank"></a>
+            </div>
+            <div class="display-flex social__circle">
+                <a class="social__sprite social__sprite-google" href="https://plus.google.com" target="_blank"></a>
+            </div>
+            <div class="display-flex social__circle">
+                <a class="social__sprite social__sprite-pinterest" href="https://ru.pinterest.com" target="_blank"></a>
+            </div>
+            <div class="display-flex social__circle">
+                <a class="social__sprite social__sprite-linkedin" href="https://www.linkedin.com" target="_blank"></a>
+            </div>
+        </div>
+        <div>
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.272497986296!2d27.520546415589656!3d53.9091334801008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc55f35bf3dad%3A0xaabda25bdeeb761f!2z0YPQuy4g0KHQutGA0YvQs9Cw0L3QvtCy0LAgMTQsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1526583043751"></iframe>
+        </div>
+        <a href="#" class="scrollup">Наверх</a>
+        <div class="section__border-top"></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
 </body>
+</html>
